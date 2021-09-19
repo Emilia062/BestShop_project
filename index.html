@@ -18,7 +18,7 @@
 <body>
 
 <header class="header">
-    <div class="container">
+    <div class="container container--header">
         <div class="header__logo">BestShop</div>
         <nav class="header__menu">
             <a href="" class="menu__link">WHY US</a>
@@ -58,122 +58,94 @@
 </section>
 
 <section class="benefits">
-    <div class="benefits__container">
-        <div class="benefits__box">
+    <div class="benefits__container container--first--row">
+        <div class="benefits__description description--first--row">
             <h3 class="benefits_title">Be always first</h3>
-            <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <div class="benefits_line line--red"></div>
+            <div class="benefits__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+            <div class="benefits__line line--red"></div>
         </div>
-        <div class="benefits__icons">
-        <div class="background--macbook"></div>
-        <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
+        <div class="benefits__imgs imgs--first--row">
+            <div class="img__background background--macbook"></div>
+            <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
         </div>
     </div>
 
-    <div class="benefits__container">
-        <div class="benefits_icons">
-            <div class="background--iphone"></div>
+    <div class="benefits__container container--second--row">
+        <div class="benefits__imgs">
+            <div class="img__background background--iphone"></div>
             <img src="assets/iPhone.png" alt="iphone" class="benefits__img__iphone">
         </div>
-        <div class="benefits__box">
+        <div class="benefits__description description--second--row">
             <h3 class="benefits_title">Your shop is where you are!</h3>
-            <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <div class="benefits_line line--blue></div>
+            <div class="benefits__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+            <div class="benefits__line line--blue"></div>
         </div>
     </div>
-    <div class="benefits__container__down>
-                <div class="benefits__box2">
-                    <h3 class="benefits_title">Your shop is where you are!</h3>
-                    <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <div class="benefits_line line--green"></div>
-                </div>
-                <div class="benefits icons">
-                <div class="block__color">
-                    <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet"></div>
+
+    <div class="benefits__container container--third--row">
+        <div class="benefits__description description--third--row">
+            <h3 class="benefits_title">Increase recognition your brand!</h3>
+            <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </div>
+            <div class="benefits__line line--green"></div>
+        </div>
+        <div class="benefits__imgs">
+            <div class="img__background background--trumpet">
+                <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet">
             </div>
         </div>
+    </div>
+
 </section>
+
 
 <section class="pricing">
     <h3 class="pricing__title">Pricing</h3>
     <div class="pricing__boxes">
         <div class="pricing__box pricing__box--basic">
-            <h4 class="box__title">Basic</h4>
-            <p class="price price--basic">$0</p>
+            <div class="box__title">Basic</div>
+            <div class="price price--basic">$0</div>
             <span></span>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">100 MB HDD</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">1 Subdomain</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">2 E-mails</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/close.svg" alt="checkbox-no" class="pricing__check">
-                <p class="pricing__text">Two years license</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/close.svg" alt="checkbox-no" class="pricing__check">
-                <p class="pricing__text">Full support</p>
-            </div>
-            <a href="" class="begin begin--basic">Begin</a>
+            <ul class="pricing--items">
+            <li><div class="pricing__text pricing--checked">100 MB HDD</div></li>
+            <li><div class="pricing__text pricing--checked">1 Subdomain</div></li>
+            <li><div class="pricing__text pricing--checked">2 E-mails</div></li>
+            <li><div class="pricing__text pricing--close">Two years license</div></li>
+            <li><div class="pricing__text pricing--close">Full support</div></li>
+            </ul>
+            <a href="#" class="begin begin--basic">Begin</a>
         </div>
         <div class="pricing__box pricing__box--professional">
-            <h4 class="box__title title--professional">Professional</h4>
-            <p class="price price--professional">$25</p>
-            <p class="pricing__text text--litlle">Limited offer</p>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">500 MB HDD</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">2 Subdomains</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">5 E-mails</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">One year license</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/close.svg" alt="checkbox-no" class="pricing__check">
-                <p class="pricing__text">Full support</p>
-            </div>
+            <div class="box__title title--professional">Professional</div>
+            <div class="price price--professional">$25</div>
+            <div class="pricing__text text--litlle">Limited offer</div>
+            <ul class="pricing-items">
+                <li><div class="pricing__text pricing--checked">500 MB HDD</div></li>
+                <li><div class="pricing__text pricing--checked">2 Subdomains</div></li>
+                <li><div class="pricing__text pricing--checked">5 E-mails</div></li>
+                <li><div class="pricing__text pricing--checked">One year license</div></li>
+                <li><div class="pricing__text pricing--close">Full support</div></li>
+            </ul>
             <a href="" class="begin begin--professional">Begin</a>
         </div>
         <div class="pricing__box pricing__box--premium">
-            <h4 class="box__title">Premium</h4>
-            <p class="price price--premium">$60</p>
-            <p class="pricing__text text--litlle">Limited offer</p>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">2 GB HDD</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">5 Subdomains</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">20 E-mails</p>
-            </div>
-            <div class="checkboxes">
-                <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">Two years license</p>
-            </div>
-            <div class="checkboxes">
-            <img src="assets/checkmark-1.svg" alt="checkmark" class="pricing__check">
-                <p class="pricing__text">Full support</p>
-            </div>
+            <div class="box__title">Premium</div>
+            <div class="price price--premium">$60</div>
+            <div class="pricing__text text--litlle">Limited offer</div>
+            <ul class="pricing-items">
+                <li><div class="pricing__text pricing--checked">2 GB HDD</div></li>
+                <li><div class="pricing__text pricing--checked">5 Subdomains</div></li>
+                <li><div class="pricing__text pricing--checked">20 E-mails</div></li>
+                <li><div class="pricing__text pricing--checked">Two years license</div></li>
+                <li><div class="pricing__text pricing--checked">Full support</div></li>
+            </ul>
             <a href="" class="begin begin--premium">Begin</a>
         </div>
     </div>
@@ -195,12 +167,12 @@
         <input type="name" id="name">
     <label for="email" class="label__email">EMAIL</label>
         <input type="email" id="email">
-    <label for="agreement">
-        <div class="agreement">
-        <input type="checkbox" id="agreement">
-        <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-        </div></label>
-<button>Send</button>
+    <label for="checkbox" class="checkbox">
+        <input type="checkbox" id="checkbox">
+        <span></span>
+        <p class="form__checkbox">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+        </label>
+<button type="submit">Send</button>
 </form>
 </div>
 
