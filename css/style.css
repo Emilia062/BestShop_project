@@ -321,7 +321,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    padding: 100px 180px;
 }
 
 .pricing__title{
@@ -329,7 +329,6 @@
     color: rgba(0, 0, 0, 1);
     font-size: 36px;
     text-align: center;
-    margin-top: 100px;
     line-height: 42px;
     padding-bottom: 50px;
 }
@@ -338,18 +337,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
 .pricing__box{
     border-radius: 18px;
     background-color: var(--white);
     width: 372px;
-    /*height: 500px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*position: relative;*/
+    flex-shrink: 0;
+    position: relative;
 }
 
 .pricing__box--basic{
@@ -370,10 +368,11 @@
     font-size: 20px;
     font-family: var(--raleway);
     font-weight: 700;
-    line-height: 1px;
     color: rgba(19, 37, 59, 1);
     padding-bottom: 14px;
+    padding-top: 34px;
 }
+
 .title--professional{
     font-size: 21px;
 }
@@ -382,7 +381,6 @@
     font-family: var(--open-sans);
     font-size: 46px;
     font-weight: 300;
-    line-height: 2px;
     padding-bottom: 5px;
 }
 
@@ -403,8 +401,24 @@
     font-family: var(--raleway);
     font-weight: 700;
     font-size: 12px;
-    line-height: 1px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.text--litlle--professional{
+    margin-bottom: 61px;
+}
+
+.pricing__boxes span{
+    margin-bottom: 50px;
+}
+
+.items--basic,
+.items--premium{
+    padding-bottom: 20px;
+}
+
+.items--professional{
+    padding-bottom: 26px;
 }
 
 .pricing__text{
@@ -412,8 +426,8 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 1);
     align-items: center;
+    padding-bottom: 25px;
 }
-
 
 .pricing--checked::before{
     content: url("../assets/checkmark-1.svg");
@@ -439,21 +453,24 @@
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    bottom: 36px;
-    left: 87px;
 }
 
 .begin--basic{
     background-color: var(--red-btn);
+    bottom: -26px;
+    left: 110px;
 }
 
 .begin--professional{
     background-color: var(--blue-btn);
-    margin-bottom: 155px;
+    bottom: -26px;
+    left: 110px;
 }
 
 .begin--premium{
     background-color: var(--green-btn);
+    bottom: -26px;
+    left: 110px;
 }
 
 /*FORM*/
@@ -508,7 +525,7 @@ form{
 }
 
 .data--mail{
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 .checkbox{
@@ -568,6 +585,7 @@ form{
 }
 
 button{
+    border: none;
     text-decoration: none;
     display: inline-block;
     background-color: var(--blue);
