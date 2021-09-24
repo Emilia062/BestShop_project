@@ -1,0 +1,58 @@
+.btn{
+  text-decoration: none;
+  color: $white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 23px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &--open{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    background-color: $blue;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px $blue-shadow;
+    padding: 22px 157px;
+
+    @include mobile {
+      padding: 22px 92px;
+    }
+  }
+
+  &--basic{
+    background-color: $red-btn;
+    position: absolute;
+    padding: 16px 57px;
+    bottom: -26px;
+    left: 110px;
+  }
+
+  &--professional{
+    background-color: $blue-btn;
+    position: absolute;
+    padding: 16px 64px;
+    bottom: -26px;
+    left: 110px;
+  }
+
+  &--premium{
+    background-color: $green-btn;
+    position: absolute;
+    padding: 16px 57px;
+    bottom: -16px;
+    left: 110px;
+  }
+
+  &--form{
+    border: none;
+    display: inline-block;
+    background-color: $blue;
+    box-shadow: 5px 10px 14px $blue-shadow;
+    border-radius: 35px;
+    line-height: 1.8rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+  }
+}

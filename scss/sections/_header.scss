@@ -1,0 +1,37 @@
+.header{
+  box-shadow: 0 3px 6px $gray;
+
+  &__container{
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  &__logo{
+    font-family: $raleway;
+    color: $blue;
+    font-size: 3.2rem;
+  }
+
+  .menu{
+
+
+
+    &__link{
+      text-decoration: none;
+      color: $gray-light;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding-bottom: 27px;
+      margin-left: 95px;
+
+      &:hover{
+        color: $black;
+        border-bottom: 4px solid $blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+

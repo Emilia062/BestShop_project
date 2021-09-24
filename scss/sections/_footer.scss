@@ -1,0 +1,30 @@
+.footer{
+  margin-top: 59px;
+  box-shadow: 0 -5px $gray-shadow;
+
+  &__container{
+    height: 89px;
+    justify-content: space-between;
+    margin: 0 136px;
+  }
+
+  &__logo{
+    font-family: $raleway;
+    font-weight: 300;
+    font-size: 2.6rem;
+    color: $blue;
+  }
+
+  &__icons{
+    img{
+      padding: 0 10px;
+    }
+  }
+  .copyright{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $gray;
+  }
+}
+
+

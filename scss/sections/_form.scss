@@ -1,0 +1,115 @@
+.contact{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0 365px;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-family: $raleway;
+    color: $black;
+    font-size: 4.9rem;
+    line-height: 5.7rem;
+    padding-bottom: 22px;
+  }
+
+  &__text{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-bottom: 42px;
+  }
+
+  &__data{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: rgba(165, 165, 165, 1);
+
+    &--mail{
+      padding-right: 5px;
+    }
+  }
+
+  &__form{
+    width: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 114px;
+  }
+
+  .checkbox{
+    width: 44rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+    p{
+      color: $gray;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      padding-left: 10px
+    }
+
+    input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked + span{
+        background-image: url("../assets/checkmark.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    span{
+      height: 2.4rem;
+      width: 2.4rem;
+      background-color: $white;
+      border: 1px solid rgba(149, 152, 154, 1);
+      border-radius: 4px;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+  }
+  #name, #email{
+    border: none;
+    border-bottom: 1px solid rgba(149, 152, 154, 1);
+    opacity: 1;
+  }
+
+  .label{
+
+    &__name, &__email{
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $blue;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+

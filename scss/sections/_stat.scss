@@ -1,0 +1,112 @@
+.stat{
+  padding: 100px;
+
+  @include mobile{
+    padding: 50px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-family: $raleway;
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: $black;
+    text-align: center;
+
+    @include mobile{
+      font-size: 3rem;
+    }
+  }
+
+  &__main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 180px;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 28px;
+    }
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px ;
+    max-height: 16.8rem;
+    position: relative;
+
+    @include mobile{
+      padding-top: 28px;
+    }
+  }
+
+  &__circle{
+    width: 6.271rem;
+    height: 6.271rem;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .circle{
+
+    &--red{
+      background-color: $red-cicle;
+      top: 97px;
+      right: 35px;
+
+      @include mobile{
+        top: 24px;
+        right: 35px;
+      }
+    }
+
+    &--blue{
+      background-color: $blue-btn;
+      top: 85px;
+      right: 80px;
+
+      @include mobile{
+        top: 11px;
+        right: 83px;
+      }
+    }
+
+    &--green{
+      background-color: $green-btn;
+      top: 95px;
+      right: 60px;
+
+      @include mobile{
+        top: 20px;
+        right: 64px;
+      }
+    }
+  }
+
+  &__numbers{
+    color: $black;
+    font-family: $raleway;
+    font-size: 2.0rem;
+    font-weight: 900;
+    padding-top: 23px;
+  }
+
+  &__description{
+    color: $gray;
+    font-family: $raleway;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 19px;
+  }
+}
+
+

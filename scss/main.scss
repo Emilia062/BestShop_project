@@ -1,0 +1,17 @@
+@import "scss/reset";
+
+@import "scss/settings/colors";
+@import "scss/settings/fonts";
+@import "scss/settings/mixins";
+
+@import "scss/elements/base";
+@import "scss/elements/buttons";
+
+
+@import "scss/sections/header";
+@import "scss/sections/open";
+@import "scss/sections/stat";
+@import "scss/sections/benefits";
+@import "scss/sections/pricing";
+@import "scss/sections/form";
+@import "scss/sections/footer";
