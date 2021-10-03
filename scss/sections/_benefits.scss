@@ -1,68 +1,116 @@
 .benefits{
   background-color: $gray-background;
-  padding: 105px 251px;
+  padding: 105px 0;
 
-  &__container {
+  @include tablet{
+    padding: 50px 0;
+  }
+
+  &__container{
+    padding: 0 100px;
+
+    @include tablet{
+      padding: 0 15px;
+    }
+  }
+
+  &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet{
+      flex-direction: column-reverse !important;
+      align-items: center;
+      padding: 0 20px !important;
+    }
   }
 
-  .container{
+  .box{
+    border: 1px solid rgba(232, 233, 237, 1);
+    border-radius: 5px;
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
     &--first--row{
-      background-color: $white;
-      border: 1px solid rgba(232, 233, 237, 1);
-      border-radius: 5px;
+      background-color: $color-white;
       margin-bottom: 37px;
-      padding-left: 35px;
     }
 
     &--second--row{
-      background-color: $white;
-      border: 1px solid rgba(232, 233, 237, 1);
-      border-radius: 5px;
+      flex-direction: row-reverse;
+      background-color: $color-white;
       margin-bottom: 37px;
-      padding-left: 35px;
+    }
+
+    &--third--row{
+      @include tablet {
+        flex-direction: column;
+      }
     }
   }
 
   &__description {
-    background-color: $white;
+    max-width: 415px;
+    margin: 90px 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include tablet{
+      margin:0;
+    }
+
   }
 
   .description {
 
     &--first--row{
-      width: 41.6rem;
+      max-width: 41.6rem;
       padding: 91px 0;
+
+      @include tablet{
+        margin: 30px 0;
+        padding: 0;
+      }
     }
 
     &--second--row{
-      width: 41.6rem;
+      max-width: 41.6rem;
       padding: 69px 20px 71px 0;
+
+      @include tablet{
+        margin: 30px 0;
+        padding: 0;
+      }
     }
 
     &--third--row{
-      width: 55.4rem;
-      padding: 50px 20px;
+      background-color: $color-white;
+      max-width: 55.4rem;
+      margin: 0;
+      padding: 50px 35px;
+
+      @include tablet{
+        width: 320px;
+        margin: 0 auto;
+      }
     }
   }
 
   &__title{
-    font-family: $raleway;
-    color: $black;
+    font-family: $font-raleway;
+    color: $color-black;
     font-size: 3.6rem;
     line-height: 4.2rem;
     padding-bottom: 30px;
   }
 
   &__text{
-    color: $black;
+    color: $color-black;
     font-size: 1.6rem;
     line-height: 2.2rem;
     padding-bottom: 50px;
@@ -70,14 +118,19 @@
 
   &__line{
     width: 32.8rem;
-    border-bottom: 4px solid $red-cicle;
+    border-bottom: 4px solid $red-circle;
     padding-top: 50px;
+
+    @include tablet{
+      display: none;
+      padding: 0;
+    }
   }
 
   .line{
 
     &--blue{
-      border-bottom: 4px solid $blue;
+      border-bottom: 4px solid $color-blue;
     }
 
     &--green{
@@ -102,38 +155,71 @@
 
   &__img{
 
+    @include tablet{
+      width: 192px;
+    }
+
     &__macbook{
       width: 386px;
       height: 219px;
-      z-index: 1;
+      z-index: 2;
+
+      @include tablet{
+        width: 193px;
+        height: 110px;
+      }
     }
 
     &__iphone{
       width: 426px;
       height: 328px;
-      z-index: 1;
+      z-index: 2;
+
+      @include tablet{
+        width: 175px;
+        height: 135px;
+      }
     }
 
     &__trumpet{
+      position: absolute;
       width: 296px;
       height: 208px;
-      position: absolute;
       top: 110px;
-      right: 90px;
+      right: 60px;
+
+      @include tablet{
+        top: 35px;
+        right: 250px;
+      }
+
+      @include mobile{
+        top: 40px;
+        right: 26px;
+      }
     }
   }
 
   .background{
+    position: absolute;
 
-    &--mackbook{
-      background-color: $red-cicle;
+    &--macbook{
+      background-color: $red-circle;
       width: 180px;
       height: 180px;
       border-radius: 41px;
-      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      display: block;
+      transform: rotate(45deg);
       position: absolute;
-      top: 21px;
-      right: 45px;
+      top: 20px;
+      right: 20px;
+
+      @include tablet{
+        width: 90px;
+        height: 90px;
+        right: 23px;
+        top: 47px;
+      }
     }
 
     &--iphone{
@@ -141,12 +227,17 @@
       width: 320px;
       height: 320px;
       border-radius: 50%;
-      position: absolute;
       top: -27px;
       left: 8px;
+
+      @include tablet{
+        width: 131px;
+        height: 131px;
+        top: -15px;
+      }
     }
 
-    &__trumpet{
+    &--trumpet{
       width: 440px;
       height: 370px;
       background-color: $green-btn;
@@ -154,6 +245,12 @@
       border-radius: 5px;
       margin-left: 61px;
       position: relative;
+
+      @include tablet{
+        margin: 0 auto;
+        width: calc(100vw - 30px);
+        height: 195px;
+      }
     }
   }
 }

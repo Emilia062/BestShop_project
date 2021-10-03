@@ -1,6 +1,6 @@
 .btn{
   text-decoration: none;
-  color: $white;
+  color: $color-white;
   font-size: 1.3rem;
   font-weight: bold;
   border-radius: 23px;
@@ -11,7 +11,7 @@
   &--open{
     font-size: 1.6rem;
     line-height: 2.2rem;
-    background-color: $blue;
+    background-color: $color-blue;
     border-radius: 40px;
     box-shadow: 5px 10px 14px $blue-shadow;
     padding: 22px 157px;
@@ -23,32 +23,77 @@
 
   &--basic{
     background-color: $red-btn;
-    position: absolute;
+    position: relative;
     padding: 16px 57px;
-    bottom: -26px;
-    left: 110px;
+    bottom: -25px;
+    left: 2px;
+
+    @include notebook{
+      bottom: -104px;
+      left: -316px;
+    }
+
+    @include tablet{
+      bottom: -104px;
+      left: -260px;
+    }
+    @include mobile{
+      bottom: -140px;
+      left: -144px;
+    }
   }
 
   &--professional{
     background-color: $blue-btn;
-    position: absolute;
+    position: relative;
     padding: 16px 64px;
-    bottom: -26px;
-    left: 110px;
+    bottom: -25px;
+    left: 2px;
+
+    @include notebook{
+      bottom: -104px;
+      left: -316px;
+    }
+
+    @include tablet{
+      bottom: -104px;
+      left: -260px;
+    }
+
+    @include mobile{
+      bottom: -140px;
+      left: -144px;
+    }
+
   }
 
   &--premium{
     background-color: $green-btn;
-    position: absolute;
+    position: relative;
     padding: 16px 57px;
-    bottom: -16px;
-    left: 110px;
+    bottom: -25px;
+    left: 2px;
+
+    @include notebook{
+      bottom: -104px;
+      left: -316px;
+    }
+
+    @include tablet{
+      bottom: -104px;
+      left: -260px;
+    }
+
+    @include mobile{
+      bottom: -140px;
+      left: -144px;
+    }
   }
 
   &--form{
     border: none;
     display: inline-block;
-    background-color: $blue;
+    background-color: $color-blue;
     box-shadow: 5px 10px 14px $blue-shadow;
     border-radius: 35px;
     line-height: 1.8rem;

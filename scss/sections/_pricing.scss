@@ -3,19 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 180px;
+  margin: 100px auto;
 
-  @include firstBreakpoint{
-    padding: 53px 18px 0 18px;
+  @include notebook{
+    margin: 50px 0;
   }
 
   &__title{
-    font-family: $raleway;
-    color: rgba(0, 0, 0, 1);
+    font-family: $font-raleway;
     font-size: 3.6rem;
     text-align: center;
     line-height: 4.2rem;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   &__boxes{
@@ -23,28 +22,39 @@
     justify-content: center;
     align-items: center;
 
-    @include mobile{
-      display: block;
-    }
-
-    span{
-      margin-bottom: 50px;
+    @include notebook{
+      flex-direction: column;
+      width: 100%;
     }
   }
 
   &__box{
     border-radius: 18px;
-    background-color: $white;
-    width: 37.2rem;
+    background-color: $color-white;
+    width: 372px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    position: relative;
 
-    @include mobile{
-      flex-direction: unset;
-      margin: 0 auto;
+    @include notebook{
+      width: calc(100% - 82px);
+      max-height: 375px;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      padding: 25px 10px 0 10px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      @include mobile{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
     }
 
     &--basic{
@@ -55,6 +65,12 @@
       border: 1px solid $blue-btn;
       box-shadow: 5px 10px 27px $blue-shadow;
       margin: 0 58px;
+      width: 33.9rem;
+
+      @include notebook{
+        width: calc(100% - 40px);
+        margin-bottom: 50px;
+      }
     }
 
     &--premium{
@@ -65,10 +81,12 @@
   .price{
     font-size: 4.6rem;
     font-weight: 300;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+
 
     &--basic{
       color: $red-btn;
+      margin-bottom: 69px;
     }
 
     &--professional{
@@ -83,23 +101,24 @@
   .box{
     &__title{
       font-size: 2rem;
-      font-family: $raleway;
+      font-family: $font-raleway;
       font-weight: bold;
       color: rgba(19, 37, 59, 1);
-      padding-bottom: 14px;
-      padding-top: 34px;
+      margin: 34px 0 14px;
 
-      @include mobile{
-        padding: 70px 50px 1px 50px;
+      @include tablet{
+        padding: 40px 30px 1px 50px;
+        text-align: center;
       }
+
     }
 
     &__price{
+      text-align: center;
 
-      @include mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      @include notebook{
+        width: 50%;
+        margin: 0;
       }
     }
   }
@@ -114,7 +133,7 @@
   .text{
     &--little{
       color: rgba(19, 37, 59, 1);
-      font-family: $raleway;
+      font-family: $font-raleway;
       font-weight: 700;
       font-size: 1.2rem;
       margin-bottom: 50px;
@@ -126,13 +145,11 @@
   }
 
 .items{
+  margin-bottom: 20px;
 
-  &--basic{
-    padding-bottom: 20px;
-  }
-
-  &--premium{
-    padding-bottom: 20px;
+  @include notebook{
+    width: 50%;
+    text-align: left;
   }
 
   &--professional{
@@ -141,11 +158,9 @@
 }
 
   &__text{
-    font-family: $open-sans;
     font-size: 1.4rem;
-    color: $black;
     align-items: center;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   &--checked{
@@ -157,10 +172,10 @@
     }
   }
 
-  &__close{
+  &--close{
 
     &::before{
-      content: url("../assets/close.svg");
+      content: url("../assets/Close.svg");
       margin-right: 10px;
       display: inline-block;
     }

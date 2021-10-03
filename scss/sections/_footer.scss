@@ -1,29 +1,40 @@
 .footer{
-  margin-top: 59px;
-  box-shadow: 0 -5px $gray-shadow;
+  padding: 20px 0;
+  box-shadow: 0 -5px 40px $gray-shadow;
 
   &__container{
     height: 89px;
+    display: flex;
     justify-content: space-between;
-    margin: 0 136px;
+    align-items: center;
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__logo{
-    font-family: $raleway;
+    font-family: $font-raleway;
     font-weight: 300;
     font-size: 2.6rem;
-    color: $blue;
+    line-height: 3rem;
+    color: $color-blue;
+  }
+
+  &__copyright{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $color-gray;
+    margin-top: 6px;
   }
 
   &__icons{
-    img{
-      padding: 0 10px;
+    
+    a:first-of-type{
+      margin-right: 20px;
     }
-  }
-  .copyright{
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    color: $gray;
   }
 }
 

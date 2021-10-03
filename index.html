@@ -20,12 +20,29 @@
     <div class="container header__container">
         <div class="header__logo">BestShop</div>
         <nav class="header__menu">
-            <a href="" class="menu__link">WHY US</a>
-            <a href="" class="menu__link">BENEFITS</a>
-            <a href="" class="menu__link">PRICES</a>
-            <a href="" class="menu__link">CONTACT</a>
+            <input type="checkbox" class="menu__checkbox" id="menu__checkbox"/>
+            <label for="menu__checkbox" class="menu__button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu__list">
+                <li class="menu__elements">
+                    <a href="" class="menu__link">WHY US</a>
+                </li>
+                <li class="menu__elements">
+                    <a href="" class="menu__link">BENEFITS</a>
+                </li>
+                <li class="menu__elements">
+                    <a href="" class="menu__link">PRICES</a>
+                </li>
+                <li class="menu__elements">
+                    <a href="" class="menu__link">CONTACT</a>
+                </li>
+            </ul>
         </nav>
-        </div>
+    </div>
 </header>
 
 <section class="open">
@@ -36,83 +53,88 @@
 </section>
 
 <section class="stat">
-    <h2 class="stat__title">The most popular sales platform in country</h2>
-    <div class="stat__main">
-        <div class="stat__box">
-            <div class="stat__circle circle--red"></div>
-            <img src="assets/person.svg" alt="person" class="img img__person">
-            <p class="stat__numbers">100000+</p>
-            <p class="stat__description">daily entries</p></div>
-        <div class="stat__box">
-            <div class="stat__circle circle--blue"></div>
-            <img src="assets/eye.svg" alt="eye" class="img img__eye">
-            <p class="stat__numbers">2000000+</p>
-            <p class="stat__description">seen products every day</p></div>
-        <div class="stat__box">
-            <div class="stat__circle circle--green"></div>
-            <img src="assets/catalog.svg" alt="catalog" class="img img__catalog">
-            <p class="stat__numbers">10000+</p>
-            <p class="stat__description">added posts daily</p></div>
+    <div class="container">
+        <h2 class="stat__title">The most popular sales platform in country</h2>
+        <div class="stat__main">
+            <div class="stat__box">
+                <div class="stat__circle circle--red">
+                <img src="assets/person.svg" alt="person" class="img img__person"></div>
+                <p class="stat__numbers">100000+</p>
+                <p class="stat__description">daily entries</p></div>
+            <div class="stat__box">
+                <div class="stat__circle circle--blue">
+                <img src="assets/eye.svg" alt="eye" class="img img__eye"></div>
+                <p class="stat__numbers">2000000+</p>
+                <p class="stat__description">seen products<br>every day</p></div>
+            <div class="stat__box">
+                <div class="stat__circle circle--green">
+                <img src="assets/catalog.svg" alt="catalog" class="img img__catalog"></div>
+                <p class="stat__numbers">10000+</p>
+                <p class="stat__description">added posts<br>daily</p></div>
+    </div>
     </div>
 </section>
 
 <section class="benefits">
-    <div class="benefits__container container--first--row">
-        <div class="benefits__description description--first--row">
-            <h3 class="benefits__title">Be always first</h3>
-            <div class="benefits__text">
+    <div class="benefits__container container">
+<!--    The first row-->
+        <div class="benefits__box box--first--row">
+            <div class="benefits__description description--first--row">
+                <h3 class="benefits__title">Be always first</h3>
+                <div class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+                <div class="benefits__line line--red"></div>
             </div>
-            <div class="benefits__line line--red"></div>
+            <div class="benefits__images images--first--row">
+                <div class="img__background background--macbook"></div>
+                <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
+            </div>
         </div>
-        <div class="benefits__images images--first--row">
-            <div class="img__background background--macbook"></div>
-            <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
+<!--The second row-->
+        <div class="benefits__box box--second--row">
+            <div class="benefits__description description--second--row">
+                <h3 class="benefits__title">Your shop is where you are!</h3>
+                <div class="benefits__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+                <div class="benefits__line line--blue"></div>
+            </div>
+            <div class="benefits__images">
+                <div class="img__background background--iphone">
+                <img src="assets/iPhone.png" alt="iphone" class="benefits__img__iphone">
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="benefits__container container--second--row">
-        <div class="benefits__images">
-            <div class="img__background background--iphone"></div>
-            <img src="assets/iPhone.png" alt="iphone" class="benefits__img__iphone">
-        </div>
-        <div class="benefits__description description--second--row">
-            <h3 class="benefits__title">Your shop is where you are!</h3>
-            <div class="benefits__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+<!--The third row-->
+        <div class="benefits__box box--third--row">
+            <div class="benefits__description description--third--row">
+                <h3 class="benefits__title">Increase recognition your brand!</h3>
+                <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+                <div class="benefits__line line--green"></div>
             </div>
-            <div class="benefits__line line--blue"></div>
-        </div>
-    </div>
-
-    <div class="benefits__container container--third--row">
-        <div class="benefits__description description--third--row">
-            <h3 class="benefits__title">Increase recognition your brand!</h3>
-            <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </div>
-            <div class="benefits__line line--green"></div>
-        </div>
-        <div class="benefits__images">
-            <div class="img__background background--trumpet">
-                <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet">
+            <div class="benefits__images">
+                <div class="img__background background--trumpet">
+                    <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet">
+                </div>
             </div>
         </div>
     </div>
-
 </section>
 
 
 <section class="pricing">
     <h3 class="pricing__title">Pricing</h3>
     <div class="pricing__boxes">
+<!--        Basic box-->
         <div class="pricing__box pricing__box--basic">
             <div class="box__price">
             <div class="box__title">Basic</div>
             <div class="price price--basic">$0</div>
-            <span></span>
             </div>
             <ul class="pricing--items items--basic">
             <li><div class="pricing__text pricing--checked">100 MB HDD</div></li>
@@ -123,6 +145,7 @@
             </ul>
             <a href="#" class="btn btn--basic">Begin</a>
         </div>
+<!--        Professional box -->
         <div class="pricing__box pricing__box--professional">
             <div class="box__price">
                 <div class="box__title title--professional">Professional</div>
@@ -138,6 +161,7 @@
             </ul>
             <a href="" class="btn btn--professional">Begin</a>
         </div>
+<!--        Premium box-->
         <div class="pricing__box pricing__box--premium">
             <div class="box__price">
                 <div class="box__title">Premium</div>
@@ -159,12 +183,12 @@
 <section class="contact">
     <div class="contact__container">
         <h2 class="contact__title">Any questions?</h2>
-        <p class="contact__text">Leave your email address or call us!</p>
-        <div class="contact__icons">
-            <img src="assets/mail icon.svg" alt="mail icon" class="contact-icon">
-            <p class="contact__data data--mail">info@bestshop.xyz</p>
-            <img src="assets/phone icon.svg" alt="phone icon" class="contact-icon">
-            <p class="contact__data data--number" >123 456 789</p>
+        <p class="contact__instruction">Leave your email address or call us!</p>
+        <div class="contact__details ">
+            <a href="mailto:info@bestshop.xyz" class="contact__data data--mail">
+                <img src="assets/mail icon.svg" alt="mail icon" class="contact-icon">info@bestshop.xyz</a>
+            <a href="tel:123456789" class="contact__data data--number" >
+                <img src="assets/phone icon.svg" alt="phone icon" class="contact-icon">123 456 789</a>
         </div>
     </div>
 
@@ -186,14 +210,14 @@
 
 <footer class="footer">
     <div class="container footer__container">
-    <div class="footer__company">
-    <span class="footer__logo">BestShop</span>
-    <p class="copyright">© 2019 BestShop LTD, All Rights Reserved</p>
-    </div>
-    <div class="footer__icons">
-        <img src="assets/twitter.svg" alt="twitter">
-        <img src="assets/facebook.svg" alt="facebook">
-    </div>
+        <div class="footer__info">
+            <a href="#" class="footer__logo">BestShop</a>
+            <p class="footer__copyright">© 2019 BestShop LTD, All Rights Reserved</p>
+        </div>
+        <div class="footer__icons">
+            <a href="#"><img src="assets/twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="assets/facebook.svg" alt="facebook"></a>
+        </div>
     </div>
 </footer>
 

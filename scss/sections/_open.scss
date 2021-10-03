@@ -3,11 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  
 
   &__sell{
-    font-family: $raleway;
+    font-family: $font-raleway;
     font-size: 4.9rem;
-    color: $black;
+    color: $color-black;
     margin-bottom: 20px;
     margin-top: 132px;
 
@@ -19,7 +21,7 @@
 
   &__text{
     font-size: 1.6rem;
-    color: $black;
+    color: $color-black;
     margin-bottom: 38px;
 
     @include mobile{
@@ -33,9 +35,11 @@
     height: auto;
 
     @include mobile{
-      width: 100vw;
+      width: 220%;
+      transfrom: translateX(-28%);
       margin-top: 51px;
     }
   }
 }
+
 

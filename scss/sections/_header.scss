@@ -1,37 +1,163 @@
 .header{
-  box-shadow: 0 3px 6px $gray;
+  box-shadow: 0 3px 6px $gray-shadow;
+  height: 70px;
+
+  @include tablet{
+    padding: 10px 25px;
+  }
+
+  @include mobile{
+    padding: 16px 25px;
+  }
 
   &__container{
+    display: flex;
     justify-content: space-between;
-    height: 70px;
+    align-items: center;
+    height: 100%;
+
+
+    @include notebook{
+      justify-content: center;
+      gap: 20vw;
+    }
   }
 
   &__logo{
-    font-family: $raleway;
-    color: $blue;
+    font-family: $font-raleway;
+    color: $color-blue;
     font-size: 3.2rem;
   }
+}
 
-  .menu{
+.menu {
+
+  &__elements {
+    padding: 0 26px;
+
+    @include mobile{
+      padding: 0 15px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+
+    @include mobile {
+      &:checked {
+        ~ .menu__list {
+          display: flex;
+        }
+
+        ~ .menu__button {
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(2px, 5px);
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(2px, -5px);
+            }
+            &:nth-child(4){
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include mobile {
+      color: $blue-btn;
+      font-size: 1.5rem;
+      padding: 4px 10px;
+      background-color: $color-white;
+      position: absolute;
+      top: 21px;
+      left: 297px;
+      border-radius: 4px;
+    }
+
+    span {
+      width: 20px;
+      height: 2px;
+      display: block;
+      margin-bottom: 3px;
+      background-color: $color-blue;
+      transition: .3s all ease-in-out;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__list {
+    max-height: unset;
+    display: flex;
+
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: $color-white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
+      box-shadow: 0 3px 6px $gray-shadow;
+    }
+  }
 
 
+  &__link {
+    color: $gray-light;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 27px;
 
-    &__link{
-      text-decoration: none;
-      color: $gray-light;
-      font-size: 1.1rem;
-      font-weight: bold;
-      padding-bottom: 27px;
-      margin-left: 95px;
 
-      &:hover{
-        color: $black;
-        border-bottom: 4px solid $blue;
-        cursor: pointer;
+    @include mobile {
+      display: block;
+      text-align: left;
+      padding: 14px 20px;
+    }
+
+
+    &:hover {
+      color: $color-black;
+      border-bottom: 4px solid $color-blue;
+      cursor: pointer;
+
+      @include mobile{
+        border: none;
       }
     }
   }
 }
-
 
 

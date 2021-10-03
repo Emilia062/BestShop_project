@@ -1,40 +1,67 @@
 .contact{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
-  padding: 0 365px;
+  padding: 80px 300px 100px;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 0;
+    padding: 50px 15px;
   }
 
   &__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 50%;
+
+    @include tablet{
+      width: 100%;
+    }
   }
 
   &__icons{
     display: flex;
     justify-content: space-between;
+
+    @include tablet{
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__title{
-    font-family: $raleway;
-    color: $black;
+    font-family: $font-raleway;
     font-size: 4.9rem;
     line-height: 5.7rem;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
+
+    @include tablet{
+      font-size: 4rem;
+      line-height: 4.7rem;
+      margin-bottom: 5px;
+    }
   }
 
-  &__text{
+  &__instruction{
     font-size: 1.6rem;
     line-height: 2.2rem;
-    padding-bottom: 42px;
+    margin-bottom: 42px;
+
+    @include tablet{
+      margin-bottom: 35px;
+    }
+  }
+
+  &__details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(165, 165, 165, 1);
+    gap: 20px;
+
+    @include tablet{
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__data{
@@ -48,27 +75,31 @@
   }
 
   &__form{
-    width: 44rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 114px;
+
+    @include tablet{
+      margin-top: 50px;
+    }
   }
 
   .checkbox{
     width: 44rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 20px;
     cursor: pointer;
 
     p{
-      color: $gray;
+      color: $color-gray;
       font-size: 1.2rem;
       line-height: 1.7rem;
-      padding-left: 10px
+      margin-left: 10px;
+
+      @include tablet{
+        margin: 0 0 21px 10px;
+      }
     }
 
     input{
@@ -88,7 +119,7 @@
     span{
       height: 2.4rem;
       width: 2.4rem;
-      background-color: $white;
+      background-color: $color-white;
       border: 1px solid rgba(149, 152, 154, 1);
       border-radius: 4px;
       flex-shrink: 0;
@@ -99,6 +130,7 @@
     border: none;
     border-bottom: 1px solid rgba(149, 152, 154, 1);
     opacity: 1;
+    margin-bottom: 30px;
   }
 
   .label{
@@ -106,8 +138,10 @@
     &__name, &__email{
       font-size: 1.1rem;
       font-weight: 700;
-      color: $blue;
+      color: $color-blue;
       line-height: 1.5rem;
+      letter-spacing: 0.328rem;
+      margin-bottom: 42px;
     }
   }
 }
