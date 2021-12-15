@@ -12,7 +12,7 @@ One-page website for ecommerce company.
 
 
 ## General Information
-The website shows the firm's products and services. It includes calcualator to check how much will be cost package of the services which 
+The website shows the firm's products and services. It includes calculator to check how much will be cost package of the services which 
 client chose.
 
 
