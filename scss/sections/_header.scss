@@ -1,10 +1,6 @@
 .header{
-  box-shadow: 0 3px 6px $gray-shadow;
-  height: 70px;
-
-  @include tablet{
-    padding: 10px 25px;
-  }
+  box-shadow: 0 3px 6px $color-gray;
+  height: 70px;;
 
   @include mobile{
     padding: 16px 25px;
@@ -15,12 +11,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
-
-    @include notebook{
-      justify-content: center;
-      gap: 20vw;
-    }
   }
 
   &__logo{
@@ -30,134 +20,67 @@
   }
 }
 
-.menu {
+.menu{
 
-  &__elements {
+  &__elements{
     padding: 0 26px;
 
-    @include mobile{
-      padding: 0 15px;
-    }
-
-    &:last-child {
+    &:last-child{
       padding-right: 0;
     }
-
-    @include mobile {
-      padding: 0;
-    }
   }
 
-  &__checkbox {
+  &__checkbox{
     display: none;
     position: absolute;
-    top: -9999px;
-    left: -9999px;
     opacity: 0;
 
-    @include mobile {
-      &:checked {
-        ~ .menu__list {
-          display: flex;
-        }
-
-        ~ .menu__button {
-          span {
-            &:nth-child(1) {
-              transform: rotate(45deg) translate(2px, 5px);
-            }
-
-            &:nth-child(2) {
-              opacity: 0;
-            }
-
-            &:nth-child(3) {
-              transform: rotate(-45deg) translate(2px, -5px);
-            }
-            &:nth-child(4){
-              opacity: 0;
-            }
-          }
-        }
-      }
+    &:checked ~ .menu__list{
+      max-height: 200px;
     }
   }
 
-  &__button {
+  &__button{
     display: none;
 
-    @include mobile {
+    @include mobile{
       color: $blue-btn;
       font-size: 1.5rem;
       padding: 4px 10px;
-      background-color: $color-white;
+      background-color: #c0c0c0;
       position: absolute;
-      top: 21px;
-      left: 297px;
+      top: 50px;
+      left: 50px;
       border-radius: 4px;
-    }
-
-    span {
-      width: 20px;
-      height: 2px;
-      display: block;
-      margin-bottom: 3px;
-      background-color: $color-blue;
-      transition: .3s all ease-in-out;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    @include mobile {
-      display: block;
     }
   }
 
-  &__list {
+  &__list{
     max-height: unset;
     display: flex;
 
-    @include mobile {
-      position: absolute;
-      left: 0;
-      top: 95px;
-      flex-direction: column;
-      background-color: $color-white;
-      width: 100%;
-      padding-bottom: 20px;
-      display: none;
-      box-shadow: 0 3px 6px $gray-shadow;
+    @include mobile{
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
     }
   }
 
 
-  &__link {
+  &__link{
+    text-transform: uppercase;
     color: $gray-light;
     font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: bold;
     padding-bottom: 27px;
+    margin-left: 95px;
 
 
-    @include mobile {
-      display: block;
-      text-align: left;
-      padding: 14px 20px;
-    }
-
-
-    &:hover {
+    &:hover{
       color: $color-black;
       border-bottom: 4px solid $color-blue;
       cursor: pointer;
-
-      @include mobile{
-        border: none;
-      }
     }
   }
 }
-
 

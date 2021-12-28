@@ -6,26 +6,21 @@ html{
   font-size: 62.5%;
 }
 
-a{
-  text-decoration: none;
-}
-
 body{
   background-color: $color-white;
   color: $color-black;
   font-family: $font-open-sans;
 }
 
-.container {
+.container{
   width: 1352px;
   margin: 0 auto;
 
-  @include tablet{
-    width: 100vw;
-  }
-
   @include mobile{
-    width: 100vw;
     padding: 0 0;
   }
+}
+
+a{
+  text-decoration: none;
 }

@@ -12,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
     <title>BestShop</title>
 </head>
 <body>
@@ -26,6 +33,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
+                <!-- <i class="fas fa-bars"></i> -->
             </label>
             <ul class="menu__list">
                 <li class="menu__elements">
@@ -53,88 +61,84 @@
 </section>
 
 <section class="stat">
-    <div class="container">
-        <h2 class="stat__title">The most popular sales platform in country</h2>
-        <div class="stat__main">
-            <div class="stat__box">
-                <div class="stat__circle circle--red">
-                <img src="assets/person.svg" alt="person" class="img img__person"></div>
-                <p class="stat__numbers">100000+</p>
-                <p class="stat__description">daily entries</p></div>
-            <div class="stat__box">
-                <div class="stat__circle circle--blue">
-                <img src="assets/eye.svg" alt="eye" class="img img__eye"></div>
-                <p class="stat__numbers">2000000+</p>
-                <p class="stat__description">seen products<br>every day</p></div>
-            <div class="stat__box">
-                <div class="stat__circle circle--green">
-                <img src="assets/catalog.svg" alt="catalog" class="img img__catalog"></div>
-                <p class="stat__numbers">10000+</p>
-                <p class="stat__description">added posts<br>daily</p></div>
-    </div>
+    <h2 class="stat__title">The most popular sales platform in country</h2>
+    <div class="stat__main">
+        <div class="stat__box">
+            <img src="assets/person.svg" alt="person" class="img img__person">
+            <div class="stat__circle circle--red"></div>
+            <p class="stat__numbers">100000+</p>
+            <p class="stat__description">daily entries</p></div>
+        <div class="stat__box">
+            <img src="assets/eye.svg" alt="eye" class="img img__eye">
+            <div class="stat__circle circle--blue"></div>
+            <p class="stat__numbers">2000000+</p>
+            <p class="stat__description">seen products every day</p></div>
+        <div class="stat__box">
+            <img src="assets/catalog.svg" alt="catalog" class="img img__catalog">
+            <div class="stat__circle circle--green"></div>
+            <img src="assets/catalog.svg" alt="catalog" class="img img__catalog">
+            <p class="stat__numbers">10000+</p>
+            <p class="stat__description">added posts daily</p></div>
     </div>
 </section>
 
 <section class="benefits">
-    <div class="benefits__container container">
-<!--    The first row-->
-        <div class="benefits__box box--first--row">
-            <div class="benefits__description description--first--row">
-                <h3 class="benefits__title">Be always first</h3>
-                <div class="benefits__text">
+    <div class="benefits__container container--first--row">
+        <div class="benefits__description description--first--row">
+            <h3 class="benefits__title">Be always first</h3>
+            <div class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-                <div class="benefits__line line--red"></div>
             </div>
-            <div class="benefits__images images--first--row">
-                <div class="img__background background--macbook"></div>
-                <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
-            </div>
+            <div class="benefits__line line--red"></div>
         </div>
-<!--The second row-->
-        <div class="benefits__box box--second--row">
-            <div class="benefits__description description--second--row">
-                <h3 class="benefits__title">Your shop is where you are!</h3>
-                <div class="benefits__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-                <div class="benefits__line line--blue"></div>
-            </div>
-            <div class="benefits__images">
-                <div class="img__background background--iphone">
-                <img src="assets/iPhone.png" alt="iphone" class="benefits__img__iphone">
-                </div>
-            </div>
+        <div class="benefits__images images--first--row">
+            <div class="img__background background--macbook"></div>
+            <img src="assets/macbook.png" alt="macbook" class="benefits__img__macbook">
         </div>
-<!--The third row-->
-        <div class="benefits__box box--third--row">
-            <div class="benefits__description description--third--row">
-                <h3 class="benefits__title">Increase recognition your brand!</h3>
-                <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    </div>
+
+    <div class="benefits__container container--second--row">
+        <div class="benefits__images">
+            <div class="img__background background--iphone"></div>
+            <img src="assets/iPhone.png" alt="iphone" class="benefits__img__iphone">
+        </div>
+        <div class="benefits__description description--second--row">
+            <h3 class="benefits__title">Your shop is where you are!</h3>
+            <div class="benefits__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-                <div class="benefits__line line--green"></div>
             </div>
-            <div class="benefits__images">
-                <div class="img__background background--trumpet">
-                    <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet">
-                </div>
+            <div class="benefits__line line--blue"></div>
+        </div>
+    </div>
+
+    <div class="benefits__container container--third--row">
+        <div class="benefits__description description--third--row">
+            <h3 class="benefits__title">Increase recognition your brand!</h3>
+            <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+            <div class="benefits__line line--green"></div>
+        </div>
+        <div class="benefits__images">
+            <div class="img__background background--trumpet">
+                <img src="assets/trumpet.png" alt="trumpet" class="benefits__img__trumpet">
             </div>
         </div>
     </div>
+
 </section>
 
 
 <section class="pricing">
     <h3 class="pricing__title">Pricing</h3>
     <div class="pricing__boxes">
-<!--        Basic box-->
         <div class="pricing__box pricing__box--basic">
             <div class="box__price">
             <div class="box__title">Basic</div>
             <div class="price price--basic">$0</div>
+            <span></span>
             </div>
             <ul class="pricing--items items--basic">
             <li><div class="pricing__text pricing--checked">100 MB HDD</div></li>
@@ -145,7 +149,6 @@
             </ul>
             <a href="#" class="btn btn--basic">Begin</a>
         </div>
-<!--        Professional box -->
         <div class="pricing__box pricing__box--professional">
             <div class="box__price">
                 <div class="box__title title--professional">Professional</div>
@@ -161,7 +164,6 @@
             </ul>
             <a href="" class="btn btn--professional">Begin</a>
         </div>
-<!--        Premium box-->
         <div class="pricing__box pricing__box--premium">
             <div class="box__price">
                 <div class="box__title">Premium</div>
@@ -180,15 +182,85 @@
     </div>
 </section>
 
+<section class="calc">
+    <h2>Calculate how much you’ll pay</h2>
+    
+    <div class="calc__columns">
+      <form class="calc__form">
+        <div class="calc__input">
+          <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+        </div>
+        <div class="calc__input">
+          <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+        </div>
+        <div class="calc__select" id="package" data-value="">
+          <div class="select__input">
+            Choose package
+          </div>
+    
+          <ul class="select__dropdown">
+            <li data-value="basic">Basic</li>
+            <li data-value="professional">Professional</li>
+            <li data-value="premium">Premium</li>
+          </ul>
+        </div>
+        <label class="form__checkbox">
+          <input type="checkbox" id="accounting"/>
+          <span class="checkbox"></span>
+          <p class="consent__text">Accounting</p>
+        </label>
+        <label class="form__checkbox">
+          <input type="checkbox" id="terminal"/>
+          <span class="checkbox"></span>
+          <p class="consent__text">Rental of a payment terminal</p>
+        </label>
+      </form>
+    
+      <div class="calc__summary">
+        <ul>
+          <li class="list__item" data-id="products">
+            <span class="item__type">Products</span>
+            <span class="item__calc">20 * $0.5</span>
+            <span class="item__price">$10</span>
+          </li>
+          <li class="list__item" data-id="orders">
+            <span class="item__type">Orders</span>
+            <span class="item__calc">20 * $0.5</span>
+            <span class="item__price">$10</span>
+          </li>
+          <li class="list__item" data-id="package">
+            <span class="item__type">Package</span>
+            <span class="item__calc">Premium</span>
+            <span class="item__price">$10</span>
+          </li>
+          <li class="list__item" data-id="accounting">
+            <span class="item__type">Accounting</span>
+            <span class="item__price">$10</span>
+          </li>
+          <li class="list__item" data-id="terminal">
+            <span class="item__type">Terminal</span>
+            <span class="item__price">$10</span>
+          </li>
+        </ul>
+        <div class="summary__total" id="total-price">
+          <span>Total</span>
+          <span class="total__price">$700</span>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
 <section class="contact">
     <div class="contact__container">
         <h2 class="contact__title">Any questions?</h2>
-        <p class="contact__instruction">Leave your email address or call us!</p>
-        <div class="contact__details ">
-            <a href="mailto:info@bestshop.xyz" class="contact__data data--mail">
-                <img src="assets/mail icon.svg" alt="mail icon" class="contact-icon">info@bestshop.xyz</a>
-            <a href="tel:123456789" class="contact__data data--number" >
-                <img src="assets/phone icon.svg" alt="phone icon" class="contact-icon">123 456 789</a>
+        <p class="contact__text">Leave your email address or call us!</p>
+        <div class="contact__icons">
+            <img src="assets/mail icon.svg" alt="mail icon" class="contact-icon">
+            <p class="contact__data data--mail">info@bestshop.xyz</p>
+            <img src="assets/phone icon.svg" alt="phone icon" class="contact-icon">
+            <p class="contact__data data--number" >123 456 789</p>
         </div>
     </div>
 
@@ -210,16 +282,17 @@
 
 <footer class="footer">
     <div class="container footer__container">
-        <div class="footer__info">
-            <a href="#" class="footer__logo">BestShop</a>
-            <p class="footer__copyright">© 2019 BestShop LTD, All Rights Reserved</p>
-        </div>
-        <div class="footer__icons">
-            <a href="#"><img src="assets/twitter.svg" alt="twitter"></a>
-            <a href="#"><img src="assets/facebook.svg" alt="facebook"></a>
-        </div>
+    <div class="footer__company">
+    <span class="footer__logo">BestShop</span>
+    <p class="copyright">© 2019 BestShop LTD, All Rights Reserved</p>
+    </div>
+    <div class="footer__icons">
+        <img src="assets/twitter.svg" alt="twitter">
+        <img src="assets/facebook.svg" alt="facebook">
+    </div>
     </div>
 </footer>
 
 </body>
+<script src="js/app.js"></script>
 </html>
