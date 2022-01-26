@@ -12,6 +12,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 46px;
+
+    @include mobile {
+      justify-content: flex-start;
+      padding: 0 10px;
+    }
   }
 
   &__company{

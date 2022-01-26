@@ -9,6 +9,7 @@
   &__container{
     padding: 0 100px;
     display: flex;
+    justify-content: space-between;
 
     @include tablet{
       padding: 0 15px;
@@ -255,6 +256,9 @@
         width: calc(100vw - 332px);
         height: 195px;
         margin-left: 0;
+      }
+      @include mobile{
+        width: calc(100vw - 30px);
       }
     }
   }

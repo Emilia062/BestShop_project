@@ -100,6 +100,11 @@
     justify-content: space-between;
     cursor: pointer;
 
+    @include mobile {
+      justify-content: flex-start;
+      width: 32rem;
+    }
+
     p{
       color: $color-gray;
       font-size: 1.2rem;
@@ -107,8 +112,11 @@
       margin-left: 10px;
       margin-bottom: 20px;
 
-      @include tablet{
+      @include tablet {
         margin: 0 0 21px 10px;
+      }
+      @include mobile {
+        width: 100vw;
       }
     }
 

@@ -592,6 +592,18 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100vw;
+  padding: 0 20px;
+}
+@media screen and (max-width: 1024px) {
+  .header__container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__container {
+    justify-content: flex-start;
+  }
 }
 .header__logo {
   font-family: "Raleway", sans-serif;
@@ -811,6 +823,7 @@ a {
 .benefits__container {
   padding: 0 100px;
   display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1024px) {
   .benefits__container {
@@ -1040,6 +1053,11 @@ a {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .benefits .background--trumpet {
+    width: calc(100vw - 30px);
+  }
+}
 
 .pricing {
   display: flex;
@@ -1098,6 +1116,7 @@ a {
   .pricing__box {
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 25px;
   }
 }
 .pricing__box--basic {
@@ -1144,6 +1163,11 @@ a {
   .pricing .box__title {
     padding: 40px 30px 1px 50px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .pricing .box__title {
+    padding: 0;
   }
 }
 .pricing .box__price {
@@ -1295,6 +1319,12 @@ a {
   justify-content: space-between;
   cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+  .contact .checkbox {
+    justify-content: flex-start;
+    width: 32rem;
+  }
+}
 .contact .checkbox p {
   color: #a5a5a5;
   font-size: 1.2rem;
@@ -1305,6 +1335,11 @@ a {
 @media screen and (max-width: 1024px) {
   .contact .checkbox p {
     margin: 0 0 21px 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact .checkbox p {
+    width: 100vw;
   }
 }
 .contact .checkbox input {
@@ -1358,6 +1393,12 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 46px;
+}
+@media screen and (max-width: 375px) {
+  .footer__container {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
 }
 .footer__company {
   display: flex;

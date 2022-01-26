@@ -53,6 +53,7 @@
       @include mobile{
         flex-wrap: nowrap;
         justify-content: space-between;
+        gap: 25px;
       }
 
     }
@@ -110,7 +111,9 @@
         padding: 40px 30px 1px 50px;
         text-align: center;
       }
-
+      @include mobile {
+        padding: 0;
+      }
     }
 
     &__price{

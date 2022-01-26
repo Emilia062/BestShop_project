@@ -1,6 +1,7 @@
 .header{
   box-shadow: 0 3px 6px $color-gray;
-  height: 70px;;
+  height: 70px;
+
 
   @include mobile{
     padding: 16px 25px;
@@ -11,6 +12,15 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100vw;
+    padding: 0 20px;
+
+    @include tablet {
+      justify-content: center;
+    }
+    @include mobile {
+      justify-content: flex-start;
+    }
   }
 
   &__logo{
