@@ -6,7 +6,6 @@ One-page website for ecommerce company.
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
@@ -27,13 +26,7 @@ client chose.
 
 
 ## Project Status
-Project is: _in progress_ 
-
-## Room for Improvement
-
-To do:
-- sum of the order
-- fix css
+Project is: _complete_ 
 
 
 ## Acknowledgements
