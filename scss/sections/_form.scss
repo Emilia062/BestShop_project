@@ -28,6 +28,11 @@
     }
   }
 
+  &-icon {
+    width: 30px;
+    height: 30px;
+  }
+
   &__title{
     font-family: $font-raleway;
     font-size: 4.9rem;
@@ -39,6 +44,10 @@
       line-height: 4.7rem;
       margin-bottom: 5px;
     }
+  }
+
+  &__text {
+    margin-bottom: 22px;
   }
 
   &__instruction{
@@ -96,6 +105,7 @@
       font-size: 1.2rem;
       line-height: 1.7rem;
       margin-left: 10px;
+      margin-bottom: 20px;
 
       @include tablet{
         margin: 0 0 21px 10px;
