@@ -1,83 +1,120 @@
-.header{
+.header {
   box-shadow: 0 3px 6px $color-gray;
   height: 70px;
 
-
-  @include mobile{
+  @include mobile {
     padding: 16px 25px;
   }
 
-  &__container{
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 100vw;
     padding: 0 20px;
 
     @include tablet {
       justify-content: center;
     }
+
     @include mobile {
       justify-content: flex-start;
     }
   }
 
-  &__logo{
+  &__logo {
     font-family: $font-raleway;
     color: $color-blue;
     font-size: 3.2rem;
   }
 }
 
-.menu{
-
-  &__elements{
+.menu {
+  &__element {
     padding: 0 26px;
 
-    &:last-child{
+    &:last-child {
       padding-right: 0;
     }
   }
 
-  &__checkbox{
+  &__checkbox {
     display: none;
     position: absolute;
+    top: -9999px;
+    left: -9999px;
     opacity: 0;
 
-    &:checked ~ .menu__list{
-      max-height: 200px;
+    @include mobile {
+      &:checked {
+        ~ .menu__list {
+          display: flex;
+        }
+        ~ .menu__button {
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(2px, 5px);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(2px, -5px);
+            }
+          }
+        }
+      }
     }
   }
 
-  &__button{
+  &__button {
     display: none;
 
-    @include mobile{
-      color: $blue-btn;
-      font-size: 1.5rem;
-      padding: 4px 10px;
-      background-color: #c0c0c0;
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      border-radius: 4px;
+    span {
+      width: 20px;
+      height: 2px;
+      display: block;
+      margin-bottom: 3px;
+      background-color: $color-blue;
+      transition: .3s all ease-in-out;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mobile {
+      display: block;
+      margin-left: 5rem;
     }
   }
 
-  &__list{
+  &__list {
     max-height: unset;
     display: flex;
 
-    @include mobile{
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out;
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
+
+      .menu__element {
+        padding: 0;
+      }
+
+      .menu__link {
+        display: block;
+        padding: 14px 20px;
+      }
     }
   }
 
-
-  &__link{
+  &__link {
     text-transform: uppercase;
     color: $gray-light;
     font-size: 1.1rem;
@@ -85,12 +122,10 @@
     padding-bottom: 27px;
     margin-left: 95px;
 
-
-    &:hover{
+    &:hover {
       color: $color-black;
       border-bottom: 4px solid $color-blue;
       cursor: pointer;
     }
   }
 }
-

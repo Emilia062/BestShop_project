@@ -1,17 +1,17 @@
-.benefits{
+.benefits {
   background-color: $gray-background;
   padding: 105px 0;
 
-  @include tablet{
+  @include tablet {
     padding: 50px 0;
   }
 
-  &__container{
+  &__container {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
 
-    @include tablet{
+    @include tablet {
       padding: 0 15px;
       flex-direction: column;
       justify-content: center;
@@ -25,14 +25,14 @@
     justify-content: space-between;
     align-items: center;
 
-    @include tablet{
+    @include tablet {
       flex-direction: column-reverse !important;
       align-items: center;
       padding: 0 20px !important;
     }
   }
 
-  .box{
+  .box {
     border: 1px solid rgba(232, 233, 237, 1);
     border-radius: 5px;
     padding-left: 35px;
@@ -40,18 +40,18 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    &--first--row{
+    &--first--row {
       background-color: $color-white;
       margin-bottom: 37px;
     }
 
-    &--second--row{
+    &--second--row {
       flex-direction: row-reverse;
       background-color: $color-white;
       margin-bottom: 37px;
     }
 
-    &--third--row{
+    &--third--row {
       @include tablet {
         flex-direction: column;
       }
@@ -66,47 +66,45 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    @include tablet{
+    @include tablet {
       margin:0;
     }
-
   }
 
   .description {
-
-    &--first--row{
+    &--first--row {
       max-width: 41.6rem;
       padding: 91px 0;
 
-      @include tablet{
+      @include tablet {
         margin: 30px 0;
         padding: 0;
       }
     }
 
-    &--second--row{
+    &--second--row {
       max-width: 41.6rem;
       padding: 69px 20px 71px 0;
 
-      @include tablet{
+      @include tablet {
         margin: 30px 0;
         padding: 0;
       }
     }
 
-    &--third--row{
+    &--third--row {
       background-color: $color-white;
       max-width: 55.4rem;
       margin: 0;
       padding: 50px 35px;
 
-      @include tablet{
+      @include tablet {
         margin-bottom: 20px;
       }
     }
   }
 
-  &__title{
+  &__title {
     font-family: $font-raleway;
     color: $color-black;
     font-size: 3.6rem;
@@ -114,101 +112,99 @@
     padding-bottom: 30px;
   }
 
-  &__text{
+  &__text {
     color: $color-black;
     font-size: 1.6rem;
     line-height: 2.2rem;
     padding-bottom: 50px;
   }
 
-  &__line{
+  &__line {
     width: 32.8rem;
     border-bottom: 4px solid $red-circle;
     padding-top: 50px;
 
-    @include tablet{
+    @include tablet {
       display: none;
       padding: 0;
     }
   }
 
-  .line{
-
-    &--blue{
+  .line {
+    &--blue {
       border-bottom: 4px solid $color-blue;
     }
 
-    &--green{
+    &--green {
       border-bottom: 4px solid $green-btn;
       padding-top: 44px;
     }
   }
 
-  &__images{
+  &__images {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     }
 
-  .images{
-    &--first--row{
+  .images {
+    &--first--row {
       padding-top: 75px;
       padding-right: 46px;
-  }
+    }
   }
 
-  &__img{
-
-    @include tablet{
+  &__img {
+    @include tablet {
       width: 192px;
     }
 
-    &__macbook{
+    &__macbook {
       width: 386px;
       height: 219px;
       z-index: 2;
 
-      @include tablet{
+      @include tablet {
         width: 193px;
         height: 110px;
       }
     }
 
-    &__iphone{
+    &__iphone {
       width: 426px;
       height: 328px;
       z-index: 2;
 
-      @include tablet{
+      @include tablet {
         width: 175px;
         height: 135px;
       }
     }
 
-    &__trumpet{
+    &__trumpet {
       position: absolute;
       width: 296px;
       height: 208px;
       top: 110px;
       right: 60px;
 
-      @include tablet{
+      @include tablet {
         top: 35px;
         right: 250px;
       }
 
-      @include mobile{
+      @include mobile {
         top: 40px;
         right: 26px;
       }
     }
   }
 
-  .background{
+  .background {
     position: absolute;
 
-    &--macbook{
+    &--macbook {
       background-color: $red-circle;
       width: 180px;
       height: 180px;
@@ -219,7 +215,7 @@
       top: 166px;
       right: 20px;
 
-      @include tablet{
+      @include tablet {
         width: 90px;
         height: 90px;
         right: 23px;
@@ -227,7 +223,7 @@
       }
     }
 
-    &--iphone{
+    &--iphone {
       background-color: $blue-btn;
       width: 320px;
       height: 320px;
@@ -236,14 +232,14 @@
       top: 108px;
       left: 8px;
 
-      @include tablet{
+      @include tablet {
         width: 131px;
         height: 131px;
         top: -15px;
       }
     }
 
-    &--trumpet{
+    &--trumpet {
       width: 440px;
       height: 370px;
       background-color: $green-btn;
@@ -252,15 +248,14 @@
       margin-left: 61px;
       position: relative;
 
-      @include tablet{
+      @include tablet {
         width: calc(100vw - 332px);
         height: 195px;
         margin-left: 0;
       }
-      @include mobile{
+      @include mobile {
         width: calc(100vw - 30px);
       }
     }
   }
 }
-

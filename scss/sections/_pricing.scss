@@ -1,15 +1,15 @@
-.pricing{
+.pricing {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 100px auto;
 
-  @include notebook{
+  @include notebook {
     margin: 50px 0;
   }
 
-  &__title{
+  &__title {
     font-family: $font-raleway;
     font-size: 3.6rem;
     text-align: center;
@@ -17,18 +17,18 @@
     margin-bottom: 50px;
   }
 
-  &__boxes{
+  &__boxes {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @include notebook{
+    @include notebook {
       flex-direction: column;
       width: 100%;
     }
   }
 
-  &__box{
+  &__box {
     border-radius: 18px;
     background-color: $color-white;
     width: 372px;
@@ -37,7 +37,7 @@
     align-items: center;
     flex-shrink: 0;
 
-    @include notebook{
+    @include notebook {
       width: calc(100% - 82px);
       max-height: 375px;
       flex-direction: row;
@@ -46,68 +46,66 @@
       margin-bottom: 50px;
       padding: 25px 10px 0 10px;
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
 
-      @include mobile{
+      @include mobile {
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 25px;
       }
-
     }
 
-    &--basic{
+    &--basic {
       border: 1px solid $red-btn;
     }
 
-    &--professional{
+    &--professional {
       border: 1px solid $blue-btn;
       box-shadow: 5px 10px 27px $blue-shadow;
       margin: 0 58px;
       width: 33.9rem;
 
-      @include notebook{
+      @include notebook {
         width: calc(100% - 40px);
         margin-bottom: 50px;
       }
     }
 
-    &--premium{
+    &--premium {
       border: 1px solid $green-btn;
     }
   }
 
-  .price{
+  .price {
     font-size: 4.6rem;
     font-weight: 300;
     margin-bottom: 5px;
 
-
-    &--basic{
+    &--basic {
       color: $red-btn;
       margin-bottom: 69px;
     }
 
-    &--professional{
+    &--professional {
       color: $blue-btn;
     }
 
-    &--premium{
+    &--premium {
       color: $green-btn;
     }
   }
 
-  .box{
-    &__title{
+  .box {
+    &__title {
       font-size: 2rem;
       font-family: $font-raleway;
       font-weight: bold;
       color: rgba(19, 37, 59, 1);
       margin: 34px 0 14px;
 
-      @include tablet{
+      @include tablet {
         padding: 40px 30px 1px 50px;
         text-align: center;
       }
@@ -116,75 +114,68 @@
       }
     }
 
-    &__price{
+    &__price {
       text-align: center;
 
-      @include notebook{
+      @include notebook {
         width: 50%;
         margin: 0;
       }
     }
   }
 
-  .title{
-    &--professional{
+  .title {
+    &--professional {
       font-size: 2.1rem;
     }
   }
 
-
-  .text{
-    &--little{
+  .text {
+    &--little {
       color: rgba(19, 37, 59, 1);
       font-family: $font-raleway;
       font-weight: 700;
       font-size: 1.2rem;
       margin-bottom: 50px;
 
-      &--professional{
+      &--professional {
         margin-bottom: 61px;
       }
     }
   }
 
-.items{
+.items {
   margin-bottom: 20px;
 
-  @include notebook{
+  @include notebook {
     width: 50%;
     text-align: left;
   }
 
-  &--professional{
+  &--professional {
     padding-bottom: 26px;
   }
 }
 
-  &__text{
+  &__text {
     font-size: 1.4rem;
     align-items: center;
     margin-bottom: 25px;
   }
 
-  &--checked{
-
-    &::before{
+  &--checked {
+    &::before {
       content: url("../assets/checkmark-1.svg");
       margin-right: 10px;
       display: inline-block;
     }
   }
 
-  &--close{
-
-    &::before{
+  &--close {
+    &::before {
       content: url("../assets/Close.svg");
       margin-right: 10px;
       display: inline-block;
     }
   }
 }
-
-
-
-

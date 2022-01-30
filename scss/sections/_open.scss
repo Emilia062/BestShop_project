@@ -1,45 +1,42 @@
-.open{
+.open {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
 
-  &__sell{
+  &__sell {
     font-family: $font-raleway;
     font-size: 4.9rem;
     color: $color-black;
     margin-bottom: 20px;
     margin-top: 132px;
 
-    @include mobile{
+    @include mobile {
       font-size: 3.5rem;
       margin-top: 100px;
     }
   }
 
-  &__text{
+  &__text {
     font-size: 1.6rem;
     color: $color-black;
     margin-bottom: 38px;
 
-    @include mobile{
+    @include mobile {
       margin: 0 33px 28px 33px;
       text-align: center;
     }
   }
 
-  &__background{
+  &__background {
     width: 100%;
     height: auto;
 
-    @include mobile{
+    @include mobile {
       width: 220%;
       transfrom: translateX(-28%);
       margin-top: 51px;
     }
   }
 }
-
-

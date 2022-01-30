@@ -1,4 +1,4 @@
-.btn{
+.btn {
   text-decoration: none;
   color: $color-white;
   font-size: 1.3rem;
@@ -21,76 +21,76 @@
     }
   }
 
-  &--basic{
+  &--basic {
     background-color: $red-btn;
     position: relative;
     padding: 16px 57px;
     bottom: -25px;
     left: 2px;
 
-    @include notebook{
+    @include notebook {
       bottom: -104px;
       left: -316px;
     }
 
-    @include tablet{
+    @include tablet {
       bottom: -104px;
       left: -260px;
     }
-    @include mobile{
-      bottom: -140px;
+
+    @include mobile {
+      bottom: -123px;
       left: -144px;
     }
   }
 
-  &--professional{
+  &--professional {
     background-color: $blue-btn;
     position: relative;
     padding: 16px 64px;
     bottom: -25px;
     left: 2px;
 
-    @include notebook{
+    @include notebook {
       bottom: -104px;
       left: -316px;
     }
 
-    @include tablet{
+    @include tablet {
       bottom: -104px;
       left: -260px;
     }
 
-    @include mobile{
-      bottom: -140px;
-      left: -144px;
+    @include mobile {
+      bottom: -123px;
+      left: -156px;
     }
-
   }
 
-  &--premium{
+  &--premium {
     background-color: $green-btn;
     position: relative;
     padding: 16px 57px;
     bottom: -25px;
     left: 2px;
 
-    @include notebook{
+    @include notebook {
       bottom: -104px;
       left: -316px;
     }
 
-    @include tablet{
+    @include tablet {
       bottom: -104px;
       left: -260px;
     }
 
-    @include mobile{
-      bottom: -140px;
+    @include mobile {
+      bottom: -123px;
       left: -144px;
     }
   }
 
-  &--form{
+  &--form {
     border: none;
     display: inline-block;
     background-color: $color-blue;

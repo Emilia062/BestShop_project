@@ -1,4 +1,4 @@
-.contact{
+.contact {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -10,19 +10,19 @@
     padding: 50px 15px;
   }
 
-  &__container{
+  &__container {
     width: 50%;
 
-    @include tablet{
+    @include tablet {
       width: 100%;
     }
   }
 
-  &__icons{
+  &__icons {
     display: flex;
     justify-content: space-between;
 
-    @include tablet{
+    @include tablet {
       flex-direction: column;
       justify-content: space-between;
     }
@@ -33,13 +33,13 @@
     height: 30px;
   }
 
-  &__title{
+  &__title {
     font-family: $font-raleway;
     font-size: 4.9rem;
     line-height: 5.7rem;
     margin-bottom: 22px;
 
-    @include tablet{
+    @include tablet {
       font-size: 4rem;
       line-height: 4.7rem;
       margin-bottom: 5px;
@@ -50,51 +50,51 @@
     margin-bottom: 22px;
   }
 
-  &__instruction{
+  &__instruction {
     font-size: 1.6rem;
     line-height: 2.2rem;
     margin-bottom: 42px;
 
-    @include tablet{
+    @include tablet {
       margin-bottom: 35px;
     }
   }
 
-  &__details{
+  &__details {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: rgba(165, 165, 165, 1);
     gap: 20px;
 
-    @include tablet{
+    @include tablet {
       flex-direction: column;
       align-items: flex-start;
     }
   }
 
-  &__data{
+  &__data {
     font-size: 1.6rem;
     line-height: 2.2rem;
     color: rgba(165, 165, 165, 1);
 
-    &--mail{
+    &--mail {
       padding-right: 5px;
     }
   }
 
-  &__form{
+  &__form {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    @include tablet{
+    @include tablet {
       margin-top: 50px;
     }
   }
 
-  .checkbox{
+  .checkbox {
     width: 44rem;
     display: flex;
     justify-content: space-between;
@@ -105,7 +105,7 @@
       width: 32rem;
     }
 
-    p{
+    p {
       color: $color-gray;
       font-size: 1.2rem;
       line-height: 1.7rem;
@@ -115,26 +115,27 @@
       @include tablet {
         margin: 0 0 21px 10px;
       }
+
       @include mobile {
         width: 100vw;
       }
     }
 
-    input{
+    input {
       position: absolute;
       opacity: 0;
       cursor: pointer;
       height: 0;
       width: 0;
 
-      &:checked + span{
+      &:checked + span {
         background-image: url("../assets/checkmark.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
     }
 
-    span{
+    span {
       height: 2.4rem;
       width: 2.4rem;
       background-color: $color-white;
@@ -144,16 +145,15 @@
       cursor: pointer;
     }
   }
-  #name, #email{
+  #name, #email {
     border: none;
     border-bottom: 1px solid rgba(149, 152, 154, 1);
     opacity: 1;
     margin-bottom: 30px;
   }
 
-  .label{
-
-    &__name, &__email{
+  .label {
+    &__name, &__email {
       font-size: 1.1rem;
       font-weight: 700;
       color: $color-blue;
@@ -163,5 +163,3 @@
     }
   }
 }
-
-
